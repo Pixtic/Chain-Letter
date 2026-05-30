@@ -1,8 +1,12 @@
 /* Makes Text Alignment Possible */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html, body{
     width: 100%;
-    min-height: 100vh;
-    height: 100%;
+    height: 100dvh;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -10,15 +14,15 @@ html, body{
 /* Text Color */
 body{
     color: #ffffff;
+    
 }
 /* Alignment Types */
 .align{
     text-align: center;
 }
 .alignall{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    padding: calc(50dvh - 1em) 0;
 }
 /* Backgrounds */
 .gradient{
