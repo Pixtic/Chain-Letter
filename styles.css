@@ -10,21 +10,34 @@ html, body{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    user-select: none;
 }
 /* Text Color */
 body{
     color: #ffffff;
-    
-}
-/* Alignment Types */
-.align{
-    text-align: center;
-}
-.alignall{
-    text-align: center;
-    padding: calc(50dvh - 1em) 0;
+    background-attachment: fixed;
 }
 /* Backgrounds */
-.gradient{
-    background: linear-gradient(151deg, #0f0844, #44045e, #16001f);
+.page1{
+    background: linear-gradient(151deg, #0f0844, #44045e, #16001f) !important;
+}
+.page2{
+    background: linear-gradient(151deg, #1a0033, #4d004d, #003333) !important;
+}
+/* PPT Mechanism */
+.text{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+#text2 {
+    display: none !important;
+}
+body.page2 #text1 {
+    display: none !important;
+}
+body.page2 #text2 {
+    display: block !important;
 }
