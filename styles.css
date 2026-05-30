@@ -1,0 +1,26 @@
+/* Makes Text Alignment Possible */
+html, body{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/* Text Color */
+body{
+    color: #ffffff;
+}
+/* Alignment Types */
+.align{
+    text-align: center;
+}
+.alignall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Backgrounds */
+.gradient{
+    background: linear-gradient(151deg, #0f0844, #44045e, #16001f);
+}
